@@ -197,11 +197,9 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       let judul = `${global.ucapan}, ${name}`.trim()
       const sections = [
       {
-        title: '𝐥𝐢𝐬𝐭 𝐦𝐞𝐧𝐮 𝐀𝐥𝐩𝐢 𝐛𝐨𝐭',
+        title: '𝐥𝐢𝐬𝐭 𝐦𝐞𝐧𝐮',
         rows: [
           { title: 'allmenu', rowId: `${_p}? all` },
-          { title: 'info alpi', rowId: `${_p}? infonadia` },
-          { title: 'info jarot', rowId: `${_p}? infomursid` },
           { title: 'game', rowId: `${_p}? game` },
           { title: 'xp', rowId: `${_p}? xp` },
           { title: 'stiker', rowId: `${_p}? stiker` },
@@ -219,7 +217,6 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
           { title: 'vote & Absen', rowId: `${_p}? vote` },
           { title: "Al-Qur\'an", rowId: `${_p}? quran` },
           { title: 'pengubah suara', rowId: `${_p}? audio` },
-          { title: 'jadi bot', rowId: `${_p}? jadibot` },
           { title: 'info', rowId: `${_p}? info` },
           { title: 'tanpa kategori', rowId: `${_p}? tanpakategori` },
           { title: 'owner', rowId: `${_p}? owner` },
@@ -286,7 +283,7 @@ let handler = async (m, { conn, usedPrefix: _p, args, command }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    await conn.send3TemplateButtonImg(m.chat, fla + teks, text.trim(), wm, `𝑷𝒆𝒎𝒊𝒍𝒊𝒌 𝑩𝒐𝒕`, `${_p}owner`, `𝑻𝒉𝒂𝒏𝒌𝒔 𝑻𝒐𝒐`, `${_p}tqto`, `𝑫𝒐𝒏𝒂𝒔𝒊`, `${_p}donasi`)
+    await conn.send3TemplateButtonImg(m.chat, fla + teks, text.trim(), wm, `𝑷𝒆𝒎𝒊𝒍𝒊𝒌 𝑩𝒐𝒕`, `${_p}owner`)
   } catch (e) {
     conn.reply(m.chat, '𝑴𝒂𝒂𝒇, 𝒎𝒆𝒏𝒖 𝒔𝒆𝒅𝒂𝒏𝒈 𝒆𝒓𝒓𝒐𝒓', m)
     throw e
