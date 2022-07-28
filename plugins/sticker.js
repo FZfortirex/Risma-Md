@@ -10,16 +10,16 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       let img = await q.download()
       if (!img) throw `balas stiker dengan perintah ${usedPrefix + command}`
       wsf = new WSF.Sticker(img, {
-        pack: Cemara,
-        author: BotWhatsapp,
+        pack: global.packname,
+        author: global.author,
         crop: false,
       })
     } else if (/image/.test(mime)) {
       let img = await q.download()
       if (!img) throw `balas gambar dengan perintah ${usedPrefix + command}`
       wsf = new WSF.Sticker(img, {
-        pack: Cemara,
-        author: BotWhatsapp,
+        pack: global.packname,
+        author: global.author,
         crop: false,
       })
     } else if (/video/.test(mime)) {
