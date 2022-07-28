@@ -27,8 +27,8 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
       let img = await q.download()
       if (!img) throw `balas video dengan perintah ${usedPrefix + command}`
       wsf = new WSF.Sticker(img, {
-        pack: Cemara,
-        author: BotWhatsapp,
+        pack: global.packname,
+        author: global.author,
         crop: true,
       })
     } else if (args[0]) {
