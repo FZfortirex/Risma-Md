@@ -5,7 +5,7 @@ let _gis = require('g-i-s')
 let gis = promisify(_gis)
 
 let handler  = async (m, { conn, usedPrefix, command, args, text }) => {
-  if (!text) return m.reply('Cari apa?\njangan nyari bok3p yaa, dosa 😖')
+  if (!text) return m.reply('Cari apa?\njangan nyari yang aneh-aneh yaa 😖')
   let results = await gis(text) || []
   let { url, width, height } = pickRandom(results) || {}
   if (!url) return m.reply('Maaf image tidak ditemukan!')
