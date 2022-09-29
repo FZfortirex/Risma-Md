@@ -16,6 +16,7 @@ global.APIs = { // API Prefix
   hardianto: 'https://hardianto.xyz',
   lol: 'https://api.lolhuman.xyz',
   adicug: 'https://api.adiofficial.xyz'
+  zenz: 'https://zenzapis.xyz'
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
@@ -29,6 +30,7 @@ global.APIKeys = { // APIKey Here
   'https://hardianto.xyz': 'hardianto',
   'https://leyscoders-api.herokuapp.com': 'apikeylu',
   'https://api.adiofficial.xyz': 'apikey lu'
+  'https://zenzapis.xyz': '0e92565522'
 }
 
 //global.wm = 'CEMARA'
